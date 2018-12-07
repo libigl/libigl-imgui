@@ -10,8 +10,10 @@ add_library(imgui
 		../imgui/imstb_rectpack.h
 		../imgui/imstb_textedit.h
 		../imgui/imstb_truetype.h
-		../imgui/examples/imgui_impl_glfw.cpp
 		../imgui/examples/imgui_impl_opengl3.cpp
+		../imgui/examples/imgui_impl_opengl3.h
+		imgui_impl_glfw.cpp
+		imgui_impl_glfw.h
 )
 
 target_include_directories(imgui PRIVATE ../imgui)
