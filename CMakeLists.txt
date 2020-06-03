@@ -16,7 +16,7 @@ add_library(imgui
 		imgui_impl_glfw.h
 )
 
-target_include_directories(imgui PRIVATE ../imgui)
+target_include_directories(imgui PUBLIC ../imgui)
 target_include_directories(imgui PUBLIC . .. ../imgui/examples)
 target_compile_definitions(imgui PUBLIC -DIMGUI_IMPL_OPENGL_LOADER_GLAD)
 
