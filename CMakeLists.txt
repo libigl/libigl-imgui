@@ -14,7 +14,7 @@ add_library(imgui
 		../imgui/examples/imgui_impl_opengl3.cpp
 )
 
-target_include_directories(imgui PRIVATE ../imgui)
+target_include_directories(imgui PUBLIC ../imgui)
 target_include_directories(imgui PUBLIC . .. ../imgui/examples)
 target_compile_definitions(imgui PUBLIC -DIMGUI_IMPL_OPENGL_LOADER_GLAD)
 
